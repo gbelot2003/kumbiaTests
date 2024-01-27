@@ -18,9 +18,6 @@ zip \
 && echo "extension=imagick.so" > /usr/local/etc/php/conf.d/ext-imagick.ini \
 && rm -rf /var/lib/apt/lists/* 
 
-RUN printf "\n" | pecl install imagick-beta
-#RUN docker-php-ext-enable imagick
-
 # configure, install and enable all php packages
 RUN set -eux; \
 	docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg --with-webp; \
