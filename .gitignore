@@ -1,0 +1,10 @@
+admin
+admin/*
+prod/*
+prod
+/mysql/*
+/data
+.idea
+/prod2
+/data
+data/*
